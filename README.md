@@ -11,6 +11,14 @@ Author: Matthew Hall <mhall@mhcomputing.net>
 Uses mplayer to detect poor-quality video files with 320x240 resolution or 
 worse. It isn't fully completed yet and needs a bit more work.
 
+### cscope-update.pl, lcscope ###
+
+First script creates discrete, accurate cscope index files for every directory 
+in `~/src` or other chosen location.
+
+Second script allows searching these projects based on value of `$PROJECT` 
+environment variable.
+
 ### bin/dirent-count.pl ###
 
 Counts the number of entries present in all directories under a given set of 

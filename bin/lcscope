@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ -z $PROJECT ]]; then
+    PROJECT="dpdk"
+fi
+
+project_dir="${HOME}/cscope/${PROJECT}"
+if [[ ! -d $project_dir ]]; then
+    echo "project ${PROJECT} has no cscope data"
+    exit 1
+fi
+cd "${project_dir}"
+
+cscope -i "${project_dir}/cscope.files" -d "$@"
+
+exit 0
